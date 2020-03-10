@@ -3,31 +3,34 @@ import React from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
+// import styles from './css/landingCss.module.css';
+import Main from './component/main';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-
-    < div style={{ height: '300px', position: 'relative' }}>
-      <Layout style={{ background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover' }}>
-        <Header transparent title="Title" style={{ color: 'white' }}>
+    <div style={{ height: '700px', position: 'relative' }} >
+      <Layout fixedHeader>
+        <Header style={{ backgroundColor: 'black' }} title={<span><span style={{ color: '#ddd' }}>Obi</span><strong> Kastanya</strong></span>}>
           <Navigation>
             <Link to="/skill">Skill</Link>
             <Link to="/myProject">My Project</Link>
-            <Link to="/resume">Resume</Link>
-            <Link to="/contact">Contact Me</Link>
+            {/* <Link to="/resume">Resume</Link> */}
+            <Link to="/contactMe">Contact Me</Link>
           </Navigation>
         </Header>
-        <Drawer title="Title">
-          <Navigation>
+        <Drawer style={{ backgroundColor: 'black' }} title="Obi Kastanya">
+          <Navigation style={{ backgroundColor: 'black' }} >
             <Link to="/skill">Skill</Link>
             <Link to="/myProject">My Project</Link>
-            <Link to="resume">Resume</Link>
-            <Link to="/contact">Contact</Link>
+            {/* <Link to="resume">Resume</Link> */}
+            <Link to="/contactMe">Contact</Link>
           </Navigation>
         </Drawer>
+        <Main />
         <Content />
       </Layout>
-    </div >);
+    </div>);
 }
 
 export default App;
