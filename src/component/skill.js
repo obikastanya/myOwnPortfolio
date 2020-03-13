@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Col, ProgressBar, Row, Container, Card, Accordion, Button, Badge } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FirefoxBrowser } from '@fontawesome/free-';
 import { List, ListItem, ListItemContent } from 'react-mdl';
-// import skillDiv from '../css/skillDiv.css';
+import '../css/skillDiv.css';
 
 
 class Skill extends Component {
@@ -97,18 +99,26 @@ class Skill extends Component {
                         <Col sm={6} style={{ padding: '80px 0px 0px 50px' }} >
                             <h1 style={{ textAlign: 'center' }} ><b>I Keep Growth</b></h1>
                             <p style={{ textAlign: 'justify' }}>I am a Junior Programmer who dream to became good fullstack developper website. So i keep learn and growth, here is new things i want to learn this years:  </p>
-                            <List>
+                            <List className="newSkill">
                                 <ListItem>
-                                    <ListItemContent icon="person">Bryan Cranston</ListItemContent>
+                                    <ListItemContent >
+                                        <FontAwesomeIcon icon="mobile-alt" />
+                                        <span>PROGRESSIVE WEBSITE</span>
+                                    </ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent icon="person">Aaron Paul</ListItemContent>
+                                    <ListItemContent>
+                                        <FontAwesomeIcon icon="dice-d20" />
+                                        <span>API IMPLEMENTS</span>
+                                    </ListItemContent>
                                 </ListItem>
                                 <ListItem>
-                                    <ListItemContent icon="person">Bob Odenkirk</ListItemContent>
+                                    <ListItemContent >
+                                        <FontAwesomeIcon icon="database" />
+                                        <span>DATA MINING</span>
+                                    </ListItemContent>
                                 </ListItem>
                             </List>
-
                         </Col>
 
                     </Row>

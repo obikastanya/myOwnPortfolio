@@ -4,8 +4,16 @@ import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
 // import styles from './css/landingCss.module.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faEnvelope, faMobileAlt, faDatabase, faDiceD20 } from '@fortawesome/free-solid-svg-icons';
+import { faPhoenixSquadron, faAdversal } from '@fortawesome/free-brands-svg-icons';
+
+
 import Main from './component/main';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+library.add(faEnvelope, faMobileAlt, faPhoenixSquadron, faAdversal, faDatabase, faDiceD20);
+
 
 function App() {
   return (

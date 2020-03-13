@@ -1,3 +1,8 @@
-#skillDiv{
-    background-color: black!important;
+
+.newSkill span{
+    
+    font-size: 25px; 
+    margin: 10px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
