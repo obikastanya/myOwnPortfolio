@@ -7,8 +7,6 @@ import { Link } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faMobileAlt, faDatabase, faDiceD20 } from '@fortawesome/free-solid-svg-icons';
 import { faPhoenixSquadron, faAdversal, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-
-
 import Main from './component/main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
