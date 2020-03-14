@@ -6,18 +6,18 @@ import { Link } from 'react-router-dom';
 // import styles from './css/landingCss.module.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope, faMobileAlt, faDatabase, faDiceD20 } from '@fortawesome/free-solid-svg-icons';
-import { faPhoenixSquadron, faAdversal } from '@fortawesome/free-brands-svg-icons';
+import { faPhoenixSquadron, faAdversal, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 
 import Main from './component/main';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-library.add(faEnvelope, faMobileAlt, faPhoenixSquadron, faAdversal, faDatabase, faDiceD20);
+library.add(faEnvelope, faMobileAlt, faPhoenixSquadron, faAdversal, faDatabase, faDiceD20, faLinkedin);
 
 
 function App() {
   return (
-    <div style={{ height: '700px', position: 'relative' }} >
+    <div style={{ height: '700px', padding: '0px' }} >
       <Layout fixedHeader>
         <Header style={{ backgroundColor: 'black' }} title={<span><span style={{ color: '#ddd' }}>Obi</span><strong> Kastanya</strong></span>}>
           <Navigation>
