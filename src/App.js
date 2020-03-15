@@ -17,7 +17,7 @@ function App() {
   return (
     <div style={{ height: '700px', padding: '0px' }} >
       <Layout fixedHeader>
-        <Header style={{ backgroundColor: 'black' }} title={<span><span style={{ color: '#ddd' }}>Obi</span><strong> Kastanya</strong></span>}>
+        <Header style={{ backgroundColor: 'black' }} title={<span><span style={{ color: '#ddd' }}></span><strong>Obi Kastanya</strong></span>}>
           <Navigation>
             <Link to="/skill">Skill</Link>
             <Link to="/myProject">My Project</Link>
@@ -25,12 +25,11 @@ function App() {
             <Link to="/contactMe">Contact Me</Link>
           </Navigation>
         </Header>
-        <Drawer style={{ backgroundColor: 'black' }} title="Obi Kastanya">
-          <Navigation style={{ backgroundColor: 'black' }} >
-            <Link to="/skill">Skill</Link>
-            <Link to="/myProject">My Project</Link>
-            {/* <Link to="resume">Resume</Link> */}
-            <Link to="/contactMe">Contact</Link>
+        <Drawer style={{ fontWeight: '900', backgroundColor: 'black', color: 'white' }} title="Obi Kastanya">
+          <Navigation style={{ backgroundColor: 'white' }} >
+            <Link to="/skill" style={{ color: 'black', fontWeight: '600' }}>Skill</Link>
+            <Link to="/myProject" style={{ color: 'black', fontWeight: '600' }}>My Project</Link>
+            <Link to="/contactMe" style={{ color: 'black', fontWeight: '600' }}>Contact</Link>
           </Navigation>
         </Drawer>
         <Main />

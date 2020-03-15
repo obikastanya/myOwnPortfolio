@@ -8,32 +8,35 @@ class contactMe extends Component {
             <div>
                 <Container>
                     <Row style={{ padding: '5% 0 5% 0' }}>
-                        <Col sm={7}>
-                            <h3 style={{ textAlign: 'justify', fontWeight: '700' }}>Contact Person : </h3>
-                            <Table borderless size="sm" style={{ width: '70%', height: '50%', marginTop: '10%' }}>
-                                <tbody>
+                        <Col sm={7} >
+                            <h3 style={{ textAlign: 'justify', fontWeight: '700' }}>CONTACT PERSON : </h3>
+                            <Table borderless size="sm" style={{ width: '70%', height: '50%', marginTop: '5%' }}>
+                                <tbody style={{ fontSize: '30px' }}>
                                     <tr>
-                                        <td style={{ fontSize: '50px' }}>
+                                        <td style={{ fontSize: '50px', verticalAlign: 'middle' }}>
                                             <FontAwesomeIcon icon="at" />
                                         </td>
-                                        <td>@biKastanya</td>
+                                        <td style={{ verticalAlign: 'middle' }}>
+                                            @biKastanya</td>
                                     </tr>
                                     <tr>
-                                        <td style={{ fontSize: '50px' }}>
+                                        <td style={{ fontSize: '50px', verticalAlign: 'middle' }}>
                                             <FontAwesomeIcon icon="comment" />
                                         </td>
-                                        <td>0811-1123-3221</td>
+                                        <td style={{ verticalAlign: 'middle' }}>
+                                            0811-1123-3221</td>
                                     </tr>
                                     <tr>
-                                        <td style={{ fontSize: '50px' }}>
+                                        <td style={{ fontSize: '50px', verticalAlign: 'middle' }}>
                                             <FontAwesomeIcon icon="envelope" />
                                         </td>
-                                        <td>obi@gmail.com</td>
+                                        <td style={{ verticalAlign: 'middle' }}>
+                                            obi@gmail.com</td>
                                     </tr>
                                 </tbody>
                             </Table>
                         </Col>
-                        <Col sm={4}>
+                        <Col sm={4} style={{ backgroundColor: 'black', padding: '4%', color: 'white', borderRadius: '2px' }}>
                             <h3 style={{ textAlign: 'justify', fontWeight: '700' }}>SEND ME MESSAGE OR INVITE ME TO YOUR PROJECT</h3>
                             <Form>
                                 <Form.Group controlId="formName">
